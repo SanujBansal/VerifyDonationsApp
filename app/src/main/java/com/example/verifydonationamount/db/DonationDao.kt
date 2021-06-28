@@ -10,9 +10,9 @@ interface DonationDao{
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(donation: Donation)
 
-    @Query("SELECT * FROM donation where cycleNumber = cycleNumber")
-    fun getDonationsByCycle(cycleNumber: Int) : List<Donation>
+    @Query("SELECT * FROM donation WHERE cycleNumber = 1")
+    fun getDonationsByCycle() : List<Donation>
 
-    @Update()
-    suspend fun update(donation: Donation): Donation
+//    @Update
+//    suspend fun update(donation: Donation): Donation
 }

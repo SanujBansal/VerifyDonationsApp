@@ -12,5 +12,5 @@ class DonationViewModel(app: Application, val donationRepository: DonationReposi
         donationRepository.upsert(donation);
     }
 
-    fun getDonationByCycle(cycleNumber: Int) = donationRepository.getDonationByCycle(cycleNumber)
+    fun getDonationByCycle() = donationRepository.getDonationByCycle()
 }

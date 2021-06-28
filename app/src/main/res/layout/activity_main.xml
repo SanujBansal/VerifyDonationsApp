@@ -86,7 +86,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Confirm"
-        app:layout_constraintTop_toBottomOf="@+id/ediTextAmount"
-        tools:layout_editor_absoluteX="158dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediTextAmount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
